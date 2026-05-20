@@ -71,8 +71,8 @@ export const useCart = create<CartState>((set) => ({
 }));
 
 export const STORE_NAME = "Ziko Shop";
-export const STORE_PHONE = "+212 6XX-XXXXXX";
-export const STORE_WHATSAPP = "212600000000"; // change to real number
+export const STORE_PHONE = "+212 644-606679";
+export const STORE_WHATSAPP = "212644606679";
 
 export function buildWhatsAppMessage(items: CartItem[]) {
   const lines = items.map(
