@@ -62,7 +62,7 @@ export function Footer() {
 
         <div className="mt-20 flex flex-col items-start justify-between gap-6 border-t border-border pt-8 md:flex-row md:items-center">
           <p className="text-[10px] uppercase tracking-luxe text-muted-foreground">
-            © {new Date().getFullYear()} NEO_CULT Studio · Casablanca, Morocco
+            © {new Date().getFullYear()} Ziko Shop Studio · Casablanca, Morocco
           </p>
 
           <div className="flex items-center gap-4">

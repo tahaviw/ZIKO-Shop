@@ -70,7 +70,7 @@ export const useCart = create<CartState>((set) => ({
     })),
 }));
 
-export const STORE_NAME = "NEO_CULT";
+export const STORE_NAME = "Ziko Shop";
 export const STORE_PHONE = "+212 6XX-XXXXXX";
 export const STORE_WHATSAPP = "212600000000"; // change to real number
 
