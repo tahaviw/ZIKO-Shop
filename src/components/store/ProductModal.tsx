@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import type { Product } from "@/lib/products";
 import { formatMAD } from "@/lib/products";
-import { useCart } from "@/lib/cart";
+import { buildWhatsAppMessage, useCart, whatsappLink } from "@/lib/cart";
 
 export function ProductModal({
   product,
