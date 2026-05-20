@@ -32,7 +32,7 @@ export function Header() {
           href="#"
           className="font-display text-lg font-bold tracking-luxe uppercase"
         >
-          NEO_CULT
+          Ziko Shop
         </a>
 
         <nav className="hidden md:flex items-center gap-10">
