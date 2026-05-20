@@ -117,17 +117,26 @@ export function ProductModal({
             >
               {size ? `Add to Cart — ${formatMAD(product.price)}` : "Select a size"}
             </button>
-            <button
-              disabled={!size}
-              onClick={() => {
-                if (!size) return;
-                add(product, size);
-                onClose();
+            <a
+              href={
+                size && product
+                  ? whatsappLink(
+                      buildWhatsAppMessage([{ product, size, quantity: 1 }])
+                    )
+                  : "#"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-disabled={!size}
+              onClick={(e) => {
+                if (!size) e.preventDefault();
               }}
-              className="border border-border py-4 text-[11px] font-semibold uppercase tracking-luxe text-foreground transition-colors hover:border-foreground disabled:opacity-40"
+              className={`border border-border py-4 text-center text-[11px] font-semibold uppercase tracking-luxe text-foreground transition-colors hover:border-foreground ${
+                !size ? "pointer-events-none opacity-40" : ""
+              }`}
             >
               Order via WhatsApp
-            </button>
+            </a>
           </div>
         </div>
       </div>
