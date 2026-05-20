@@ -32,12 +32,12 @@ export function CartDrawer() {
     0
   );
 
+  const waUrl =
+    items.length > 0 ? whatsappLink(buildWhatsAppMessage(items)) : "#";
+
   const handleWhatsApp = () => {
     if (items.length === 0) return;
-    const url = whatsappLink(buildWhatsAppMessage(items));
     setConfirming(true);
-    // Open WhatsApp immediately too
-    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
