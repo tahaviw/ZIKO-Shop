@@ -32,12 +32,12 @@ export function CartDrawer() {
     0
   );
 
+  const waUrl =
+    items.length > 0 ? whatsappLink(buildWhatsAppMessage(items)) : "#";
+
   const handleWhatsApp = () => {
     if (items.length === 0) return;
-    const url = whatsappLink(buildWhatsAppMessage(items));
     setConfirming(true);
-    // Open WhatsApp immediately too
-    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -193,12 +193,15 @@ export function CartDrawer() {
               </div>
             ) : null}
 
-            <button
+            <a
+              href={waUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={handleWhatsApp}
-              className="w-full border border-foreground bg-foreground py-4 text-[11px] font-semibold uppercase tracking-luxe text-background transition-colors hover:bg-background hover:text-foreground"
+              className="block w-full border border-foreground bg-foreground py-4 text-center text-[11px] font-semibold uppercase tracking-luxe text-background transition-colors hover:bg-background hover:text-foreground"
             >
               Order via WhatsApp
-            </button>
+            </a>
             <p className="text-center text-[10px] uppercase tracking-luxe text-muted-foreground">
               No card required · Confirm with our team
             </p>
