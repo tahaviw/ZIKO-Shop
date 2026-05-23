@@ -1,39 +1,39 @@
 # ZIKO-shop
 
-ZIKO-shop is a modern full-stack clothing e-commerce platform built with the TanStack Start framework architecture. The project focuses on high-performance rendering, scalable front-end architecture, responsive UI composition, and production-grade state management to deliver a seamless online shopping experience.
+ZIKO-shop is a modern full-stack clothing e-commerce web application built with the TanStack Start framework architecture. The project focuses on scalable front-end engineering, server-side rendering performance, responsive UI systems, and production-grade state management to deliver a fast and immersive online shopping experience.
 
-The application combines server-side rendering, client-side hydration, modular component systems, and modern React tooling to create a fast, scalable, and maintainable fashion e-commerce platform optimized for real-world production workflows.
+The application combines modern React tooling, SSR hydration workflows, reusable component architecture, and optimized styling utilities to create a maintainable and high-performance fashion e-shop suitable for real-world deployment scenarios.
 
 ---
 
 ## Features
 
-- Responsive modern clothing e-commerce interface
+- Responsive clothing e-commerce interface
 - Dynamic product catalog rendering
 - Stateful shopping cart management
 - File-based routing architecture
-- Server-side rendering (SSR) with client hydration
+- Server-side rendering with client hydration
 - Reusable component-driven UI system
 - Interactive product carousels
-- Form validation with schema-based validation
-- Accessible UI primitives powered by Radix UI
-- Optimized performance using Bun and Vite
-- Utility-first styling architecture with Tailwind CSS v4
-- Icon system integration using Lucide React
-- Scalable state management using Zustand
+- Accessible Radix UI component integration
+- Schema-based form validation
 - Mobile-first responsive layouts
+- Utility-first styling architecture
+- Fast development workflow powered by Bun and Vite
+- Global state management using Zustand
+- SVG icon integration using Lucide React
 
 ---
 
 ## Tech Stack
 
-### Core Framework
+### Framework & Core
 
 - TanStack Start
-- React 19
+- React
 - TypeScript
 
-### Routing & Data Layer
+### Routing & Data Management
 
 - @tanstack/react-router
 - @tanstack/react-query
@@ -41,18 +41,17 @@ The application combines server-side rendering, client-side hydration, modular c
 ### Styling & UI
 
 - Tailwind CSS v4
-- @tailwindcss/vite
 - Radix UI
 - Lucide React
 - embla-carousel-react
 
-### State Management & Forms
+### State & Forms
 
 - Zustand
 - React Hook Form
 - Zod
 
-### Runtime & Tooling
+### Tooling & Runtime
 
 - Bun
 - Vite
@@ -69,31 +68,7 @@ https://ziko-shop.lovable.app/
 
 ---
 
-## Project Structure
-
-```bash
-ZIKO-shop/
-│
-├── src/
-│   ├── routes/
-│   ├── components/
-│   ├── store/
-│   ├── hooks/
-│   ├── lib/
-│   ├── styles/
-│   └── utils/
-│
-├── public/
-├── package.json
-├── bun.lockb
-├── vite.config.ts
-├── tsconfig.json
-└── README.md
-```
-
----
-
-## Installation & Deployment
+## Installation
 
 ### Clone the Repository
 
@@ -113,28 +88,16 @@ cd ZIKO-shop
 bun install
 ```
 
-### Run Development Server
+### Start the Development Server
 
 ```bash
 bun run dev
 ```
 
-### Open the Application
+### Open in Browser
 
-```bash
+```txt
 http://localhost:3000
-```
-
-### Production Build
-
-```bash
-bun run build
-```
-
-### Preview Production Build
-
-```bash
-bun run start
 ```
 
 ---
@@ -143,31 +106,31 @@ bun run start
 
 1. Launch the development server using Bun.
 2. Open the application in your browser.
-3. Browse the clothing catalog through responsive product grids and product carousels.
-4. Navigate between product categories using the routing system.
-5. Open product details and interact with UI components.
+3. Browse clothing collections through responsive product layouts.
+4. Navigate between pages using the file-based routing system.
+5. Interact with product cards, carousels, and dialogs.
 6. Add products to the shopping cart.
 7. Update quantities or remove products dynamically.
-8. Interact with dialogs, dropdowns, and forms powered by Radix UI.
-9. Experience smooth responsive layouts across desktop, tablet, and mobile devices.
+8. Use responsive navigation and UI components across desktop and mobile devices.
+9. Experience optimized rendering and smooth transitions throughout the application.
 
 ---
 
 ## Architecture & Logic Breakdown
 
-### TanStack Start Full-Stack Architecture
+### TanStack Start Architecture
 
-The application is built using the TanStack Start framework, providing:
+The application is built using TanStack Start, a modern full-stack React framework providing:
 
 - Server-side rendering (SSR)
 - Client-side hydration
 - File-based routing
-- Full-stack React architecture
+- Scalable application structure
 
 This architecture improves:
 
-- Initial page load performance
-- SEO optimization
+- SEO performance
+- Initial page load speed
 - Scalability
 - Developer experience
 
@@ -175,87 +138,73 @@ This architecture improves:
 
 ### SSR & Hydration Workflow
 
-Pages are initially rendered on the server before being hydrated on the client:
+Pages are initially rendered on the server before becoming fully interactive on the client.
 
 ```txt
-Server Render → HTML Response → Client Hydration → Interactive React Application
+Server Render → HTML Response → Client Hydration → Interactive React UI
 ```
 
 Benefits include:
 
-- Faster perceived rendering
-- Better SEO indexing
-- Reduced client-side rendering overhead
-- Improved accessibility performance
+- Faster perceived performance
+- Improved SEO indexing
+- Reduced client rendering overhead
+- Better accessibility support
 
 ---
 
-### File-Based Routing System
+### File-Based Routing
 
-Routing is managed using TanStack Router with a file-based structure:
+Routing is powered by TanStack Router using a file-based routing structure.
 
 ```bash
 src/routes/
 ```
 
-Each route automatically maps to a page inside the application, improving:
+Each route automatically maps to a page component, improving:
 
-- Route scalability
-- Project maintainability
-- Cleaner architecture
-- Faster development workflows
+- Route organization
+- Maintainability
+- Scalability
+- Development efficiency
 
 ---
 
-### Zustand Shopping Cart State Management
+### Zustand State Management
 
-The shopping cart is managed globally using Zustand.
+The shopping cart state is managed globally using Zustand.
 
-Core cart responsibilities include:
+Core responsibilities include:
 
 - Add to cart
-- Remove products
-- Update quantities
-- Cart persistence
-- Total price calculations
+- Remove items
+- Quantity updates
+- Cart synchronization
+- Total calculations
 
-This lightweight state architecture avoids unnecessary boilerplate while maintaining high runtime performance.
-
----
-
-### Form Handling & Validation
-
-Forms are implemented using:
-
-- React Hook Form
-- Zod schema validation
-
-This setup provides:
-
-- Type-safe validation
-- Optimized form rendering
-- Scalable form architecture
-- Improved developer ergonomics
+This lightweight architecture minimizes boilerplate while maintaining high runtime performance.
 
 ---
 
-### Component System & UI Composition
+### UI Composition System
 
-The application uses Radix UI primitives combined with Tailwind CSS utilities to create reusable and accessible components such as:
+The interface uses reusable UI primitives powered by Radix UI and styled with Tailwind CSS v4.
+
+Components include:
 
 - Dialogs
 - Accordions
-- Select menus
-- Navigation components
-- Interactive product modals
+- Dropdown menus
+- Select components
+- Interactive product sections
 
-Lucide React provides scalable SVG icon integration across the application interface.
+Lucide React provides scalable SVG icons across the application interface.
 
 ---
 
-### Styling Architecture
+### Styling Workflow
 
-Tailwind CSS v4 powers the styling system using utility-first design patterns:
+Tailwind CSS v4 powers the utility-first styling system.
 
 ```css
 class="flex items-center justify-between rounded-xl"
@@ -264,36 +213,52 @@ class="flex items-center justify-between rounded-xl"
 Advantages include:
 
 - Faster UI development
-- Consistent spacing system
-- Scalable responsive layouts
-- Minimal CSS overhead
-- Improved maintainability
+- Consistent design system
+- Responsive layouts
+- Reduced CSS complexity
+- Easier maintenance
+
+---
+
+### Forms & Validation
+
+Forms are implemented using:
+
+- React Hook Form
+- Zod validation schemas
+
+This combination provides:
+
+- Type-safe validation
+- Optimized rendering
+- Cleaner form logic
+- Scalable form architecture
 
 ---
 
 ## Performance Optimizations
 
-- Bun runtime for faster dependency installation and execution
-- Vite-powered instant HMR and optimized builds
-- Server-side rendering for improved page speed
-- Component-level modularization
-- Lightweight Zustand state architecture
-- Optimized responsive image rendering
+- Bun runtime for faster dependency management
+- Vite-powered optimized builds
+- Server-side rendering architecture
+- Modular component structure
+- Lightweight Zustand state management
+- Responsive image handling
+- Utility-first CSS optimization
 
 ---
 
 ## Future Improvements
 
-- Authentication and user accounts
+- User authentication system
 - Payment gateway integration
 - Wishlist functionality
-- Advanced product filtering and search
-- Inventory management system
+- Product filtering and search
+- Inventory management
 - Product reviews and ratings
 - Dark mode support
 - Order tracking dashboard
-- CMS integration
-- Persistent server-side cart synchronization
+- Persistent cart synchronization
 
 ---
 
