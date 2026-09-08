@@ -264,5 +264,5 @@ This combination provides:
 
 ## Author
 
-Taha Belghiti — Junior Full-stack Developer  
+Taha Belghiti Junior Full-stack Developer  
 Built with TanStack Start, TypeScript, & Tailwind CSS · © 2026
